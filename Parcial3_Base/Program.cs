@@ -37,6 +37,29 @@ namespace Parcial3_Base
         /// <returns>'true' si las matrices pueden sumarse, 'false' de otro modo</returns>
         public bool SePuedenSumarMatrices(int[,] A, int[,] B)
         {
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.WriteLine(A[i, j]);
+                }
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.WriteLine(B[i, j]);
+                }
+                //SePuedenSumarMatrices= A[i, j] + B[i, j];
+
+
+                {
+                    return true;
+                }
+            }
+
             return false;
         }
 
@@ -58,7 +81,14 @@ namespace Parcial3_Base
         /// <returns>La cantidad de veces que aparece char en input</returns>
         public int ConteoDeCaracter(string input, char car)
         {
-            return 0;
+
+            int n = 0;
+            foreach (char c in input)
+            {
+                if (c == car)
+                    ++n;
+            }
+            return n;
         }
 
         #endregion EASY
@@ -74,6 +104,7 @@ namespace Parcial3_Base
         /// <returns>Un arreglo cuyos elementos están en orden inverso a arr</returns>
         public int[] InvertirArreglo(int[] arr)
         {
+
             return null;
         }
 
@@ -84,9 +115,25 @@ namespace Parcial3_Base
         /// <param name="input"></param>
         /// <returns>'true' si input es palíndromo, `false` de otro modo</returns>
         public bool EsPalindromo(string input)
-        {
-            return false;
+            for (int i = string.Length - 1; i >= 0; i--)
+            {
+                string += (string[i]);
+            }
+            {
+                if (chain.Equals(chain2))
+                    return true;
         }
+                else
+                    return false;
+            }
+
+
+        
+
+
+
+
+
 
         /// <summary>
         /// Calcula el n-ésimo término de la serie de Fibonacci, basado en índice 0
@@ -95,19 +142,36 @@ namespace Parcial3_Base
         /// <returns>El número correspondiente a la posición n en la serie de Fibonacci</returns>
         public int CalcularFibonacciEn(int n)
         {
-            return 0;
-        }
 
+
+
+            if (n == 1 || n == 0)
+                return n;
+            else
+                return CalcularFibonacciEn(n - 1) + CalcularFibonacciEn(n - 2);
+           
+
+
+        }
         /// <summary>
         /// Retorna la matriz resultada de multiplicar A x B, si es posible hacer la operación.
         /// </summary>
         /// <param name="A"></param>
         /// <param name="B"></param>
         /// <returns>La matriz AxB</returns>
-        public int[,] MultiplicarMatrices(int[,] A, int[,] B)
-        {
-            return null;
-        }
+        //public int[,] MultiplicarMatrices(int[,] A, int[,] B)
+      
+               
+               
+            
+            
+        
+    
+    
+
+
+            
+       
 
         #endregion MEDIUM
 
@@ -129,6 +193,7 @@ namespace Parcial3_Base
             return string.Format("{0} hrs : {1} mins : {2} segs", hrs, mins, segs);
         }
 
+
         /// <summary>
         /// Determina si dos circunferencias se tocan en algún punto, dados sus radios y centros.
         /// Recuerde, la distancia entre dos puntos está dada por la fórmula
@@ -141,6 +206,16 @@ namespace Parcial3_Base
         /// <returns>'true' si hay algún punto en que las esferas se toquen, 'false' de otro modo</returns>
         public bool HayColisión(Centro c1, float r1, Centro c2, float r2)
         {
+            //if (c1 == c2|| r1 == r2)
+            //{
+
+            //    return true;
+            //}
+               
+        
+
+        
+
             return false;
         }
 
